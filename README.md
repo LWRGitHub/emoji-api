@@ -1,5 +1,5 @@
 # Emoji API
-locally hosted emoji API. Do a GET and get JSON of emoji data ***as seen below***. Also do a POST of the emoji name & receive the data on that specific emoji.
+This is a locally hosted emoji API. You can do a GET requst and you will receive JSON data on all the available emojis , ***"as seen below"***. Also you can send a POST of the emoji name ***"eg. astonished"*** & you will receive the data on that specific emoji.
 
 ```
 [
