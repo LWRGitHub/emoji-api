@@ -1,4 +1,16 @@
 # Emoji API
+locally hosted emoji API. Do a GET and get JSON of emoji data ***as seen below***. Also do a POST of the emoji name & receive the data on that specific emoji.
+
+```
+[
+    {"name":"100","emoji":"💯","polarity":3},
+    {"name":"angry","emoji":"😠","polarity":-3},
+    {"name":"anguished","emoji":"😧","polarity":-3},
+    {"name":"astonished","emoji":"😲","polarity":2},
+    {"name":"black_heart","emoji":"🖤","polarity":3},
+     ... 
+]
+
 
 ## Installation
 
