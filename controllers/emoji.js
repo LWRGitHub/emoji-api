@@ -10,23 +10,34 @@ module.exports = (app) => {
 
 
     //GET Holds emjis & words 
-    app.get('/emoji', (req, res) => {
-        res.json(emojiEmotion)
+    app.get('/', (req, res) => {
+        return res.json(emojiEmotion)
     })
 
     //POST send word get emoji
     app.post('/', (req, res) => {
 
         emojiToUse = ''
-        for( obj in emojiEmotion ){
-            if( req.body.word === obj.name ){
+        emojiEmotion.forEach( function(obj, index) {
+            if( req.body.word == obj.name ){
                 emojiToUse = obj.emoji
+                
             }
-        }
-        
-        return res.json({
-            emoji: emojiToUse
         })
+        
+        if(emojiToUse === ''){
+            return res.json({
+                "error": "Could not find emoji."
+            })
+        } else {
+            return res.json({
+                "emoji": emojiToUse
+            })
+        }
+
+        
+
+        
     })
 
     
@@ -35,3 +46,4 @@ module.exports = (app) => {
 
     //PUT Edit
 }
+
