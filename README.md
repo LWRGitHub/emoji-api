@@ -1,5 +1,5 @@
 # Emoji API
-This is a locally hosted emoji API. You can do a GET requst and you will receive JSON data on all the available emojis , ***"as seen below"***. Also you can send a POST of the emoji name ***"eg. astonished"*** & you will receive the data on that specific emoji.
+This is a locally hosted emoji API. You can do a GET requst and you will receive JSON data on all the available emojis, ***"as seen below"***. Also you can send a POST of the emoji name ***"astonished"*** & you will receive the data on that specific emoji 😲.
 
 ```
 [
@@ -28,7 +28,7 @@ npm start
 
 - `npm start` runs on localhost:3000
 - Call using [Postman](https://www.postman.com/): 
-    - type "localhost:3000/" in Postman address bar
+    - type `localhost:3000/` in Postman address bar
     - select the "Body" option
     - POST:
         - select the "raw" & "JSON" options, ***see pic***
