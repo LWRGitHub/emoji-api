@@ -20,10 +20,12 @@ npm start
     - POST:
         - select the "raw" & "JSON" options, ***see pic***
         <img alt="Screen shot of POST request in Postman app." width="50%" src="https://github.com/lwrgithub/emoji-api/blob/master/img/postman-post.png" />
+
         - Send something like: { "word": "grin" }
         - Get back: { "emoji": "😁" }
         - Click "Send"
     - GET:
         - select the "none" option, ***see pic***
         <img alt="Screen shot of GET request in Postman app." width="50%" src="https://github.com/lwrgithub/emoji-api/blob/master/img/postman-get.png" />
+        
         - Click "Send"
